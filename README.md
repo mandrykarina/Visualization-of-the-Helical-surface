@@ -32,16 +32,6 @@
 #### Вращение вокруг оси Y (плоскость XZ):
 ![image](https://github.com/user-attachments/assets/d80cb923-bf9e-41ae-80cc-9001f49c5f3e)
 
-
-\[
-R_y(\theta) =
-\begin{pmatrix}
-\cos(\theta) & 0 & \sin(\theta) \\
-0 & 1 & 0 \\
--\sin(\theta) & 0 & \cos(\theta)
-\end{pmatrix}
-\]
-
 Применяется к координатам:
 
 - **x' = x * cos(a) + z * sin(a)**
@@ -49,14 +39,7 @@ R_y(\theta) =
 
 #### Вращение вокруг оси X (плоскость XY):
 
-\[
-R_x(\phi) =
-\begin{pmatrix}
-1 & 0 & 0 \\
-0 & \cos(\phi) & -\sin(\phi) \\
-0 & \sin(\phi) & \cos(\phi)
-\end{pmatrix}
-\]
+![image](https://github.com/user-attachments/assets/4d4c20ba-378e-41ae-86fa-168c24d0e287)
 
 Применяется к координатам:
 
@@ -72,13 +55,8 @@ R_x(\phi) =
 
 Для каждой 3D-точки (x, y, z), её 2D-проекция вычисляется по формулам:
 
-\[
-x_{\text{proj}} = \left(\frac{d \cdot x_{\text{new}}}{z_{\text{new}}}\right) \cdot \text{scale} + \text{center}_x
-\]
+![image](https://github.com/user-attachments/assets/14cfdc19-cd2c-44f5-bcc3-5145675498ff)
 
-\[
-y_{\text{proj}} = \left(\frac{-d \cdot y_{\text{new}}}{z_{\text{new}}}\right) \cdot \text{scale} + \text{center}_y
-\]
 
 где:
 - **d**  — фокусное расстояние камеры,
